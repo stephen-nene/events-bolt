@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Event } from '@/types';
 import { Button } from '@/components/ui/button';
@@ -70,6 +70,9 @@ export const BookingForm: React.FC<BookingFormProps> = ({ event }) => {
       });
     }, 1500);
   };
+  useEffect(()=>{
+    console.log(user)
+  },[])
 
   return (
     <Card>

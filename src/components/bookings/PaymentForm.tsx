@@ -42,7 +42,7 @@ export const PaymentForm: React.FC<PaymentFormProps> = ({
   const [isLoading, setIsLoading] = useState(false);
   
   const { toast } = useToast();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // Format price for display
   const formattedAmount = new Intl.NumberFormat('en-US', {
